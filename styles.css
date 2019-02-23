@@ -28,7 +28,7 @@ body {
 }
 
 .inline-block {
-  display: inline-block;
+  display: inline;
 }
 
 /* Utilities */
@@ -53,6 +53,10 @@ a {
   color: black;
 }
 
+.grey {
+  color: #a6a6a6;
+}
+
 .blue {
   color: #0071da;
 }
@@ -70,13 +74,6 @@ a {
   border: 1px solid #0071da;
   border-radius: 5px;
   background-color: #0071da;
-}
-
-.flex-hor-center {
-  display: flex;
-  align-items: center;
-  border: 1px sold black;
-  width: 100%;
 }
 
 /* Top navbar */
@@ -275,6 +272,8 @@ a:link {
 
 .container-medium {
   height: 170px;
+  display: flex;
+  flex-direction: row;
 }
 
 .container-large {
@@ -301,6 +300,84 @@ a:link {
   display: inline-block;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.main-section-p {
+  padding-left: 10px;
+  font-size: 1.3em;
+  padding-top: 10px;
+  padding-bottom: -10px;
+}
+
+.fa-comment-alt {
+  padding: 0 5px 0 12px;
+}
+
+.fa-share {
+  padding: 0 5px 0 15px;
+}
+
+.fa-bookmark {
+  padding: 0 5px 0 15px;
+}
+
+.well-image {
+  height: 300px;
+  margin: 20px 0 0 80px;
+}
+
+.elon {
+  height: 295px;
+  margin: 20px 0 0 50px;
+}
+
+.rep {
+  height: 295px;
+  margin: 20px 0 0 100px;
+}
+
+.spaceship {
+  height: 295px;
+  margin: 20px 0 0 110px;
+}
+
+.ice {
+  height: 295px;
+  margin: 20px 0 0 110px;
+}
+
+.box-two {
+  padding-top: 30px;
+}
+
+.last-box {
+  padding-top: 10px;
+}
+
+.fa-arrow-up {
+  padding-top: 15px;
+}
+
+.red-arrow:hover {
+  color: red;
+}
+
+.blue-arrow:hover {
+  color: #0071da;
+}
+
+.sml-icon {
+  width: 20px;
+  margin: 10px;
+}
+
+.block {
+  display: block;
+}
+
 /* Right side */
 
 .container-right {
@@ -310,7 +387,9 @@ a:link {
 
 .right-sml {
   width: 300px;
-  height: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
   margin-left: 20px;
   margin-bottom: 20px;
   border-radius: 6px;
@@ -328,7 +407,7 @@ a:link {
 
 .right-lrg {
   width: 300px;
-  height: 100px;
+  height: 100%;
   margin-left: 20px;
   margin-bottom: 20px;
   border-radius: 6px;
@@ -349,19 +428,102 @@ a:link {
   border-radius: 6px 0 0 6px;
 }
 
-.fa-arrow-up {
-  padding-top: 15px;
+.army-men {
+  height: 20px;
+  margin-left: 115px;
+  padding-top: 5px;
 }
 
-.red-arrow:hover {
+.greenbox {
+  border-radius: 6px 6px 0 0;
+  background-color: hsl(120, 100%, 90%);
+}
+
+.right-popular {
+  padding-left: 110px;
+}
+
+.pop-p {
+  padding: 5px;
+}
+
+.create-padding {
+  padding: 5px 0 10px 20px;
+}
+
+.netflix {
+  padding: 5px 0 5px 13px;
+}
+
+.fa-shield-alt {
   color: red;
+  padding-top: 20px;
 }
 
-.blue-arrow:hover {
-  color: #0071da;
+.red-btn-txt {
+  font-size: 0.9em;
+  color: #eee;
+  font-family: "Roboto Slab", serif;
 }
 
-.sml-icon {
-  width: 20px;
-  margin: 10px;
+.red-button {
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: red;
+}
+
+.red-top {
+  padding-top: 12px;
+}
+
+.prem-p {
+  font-size: 0.8em;
+  padding: 5px 0 5px 0;
+}
+
+.white {
+  color: #fff;
+}
+
+.trending-p {
+  font-size: 0.8em;
+  padding: 5px 0 0 0;
+}
+
+.wolf {
+  height: 30px;
+  border-radius: 100px;
+  padding: 5px 0 15px 5px;
+}
+
+.subs {
+  display: flex;
+  align-content: center;
+}
+
+.wolf-p {
+  font-size: 0.8em;
+  padding-left: 5px;
+}
+
+.white-btn-txt-sub {
+  font-size: 0.9em;
+  color: #eee;
+  font-family: "Roboto Slab", serif;
+}
+
+.blue-button-sub {
+  font-family: "Roboto", sans-serif;
+  padding: 5px 20px 5px 20px;
+  margin-left: 45px;
+  border: 1px solid #0071da;
+  border-radius: 5px;
+  background-color: #0071da;
+}
+
+.blue-sub-two {
+  position: relative;
+  right: 8px;
 }
